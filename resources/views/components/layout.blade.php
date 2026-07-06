@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title  }}</title>
+    <title>{{ $title ?? 'exemple' }}</title>
+     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <style>
         .card {
             background-color: #693c3c;
@@ -24,7 +25,7 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-900 text-white margin-0 p-0 ">
     <nav>
         <a href="/">Home</a>
         <a href="/about">About us</a>
